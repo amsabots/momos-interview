@@ -22,6 +22,10 @@ The project has been bundled into a single docker project with instructions to b
 3. Run `docker-compose up --build -d`
 4. That should start all the three services bundled in this project.
 
+### Reachability endpoint
+
+The application Interface is reachable on endpoint `http://localhost:16800/`
+
 #### Failure points - Incase of any
 
 React material UI & Lottie for animations have peer dependency requirements. So during project creation, there might be errors arising due to those issues mentioned.
