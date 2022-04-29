@@ -1,0 +1,24 @@
+momos-backend/node_modules
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+momos/node_modules
+momos/.pnp
+momos/.pnp.js
+
+# testing
+momos/coverage
+
+# production
+momos/build
+
+# misc
+momos/.DS_Store
+momos/.env.local
+momos/.env.development.local
+momos/.env.test.local
+momos/.env.production.local
+
+momos/npm-debug.log*
+momos/yarn-debug.log*
+momos/yarn-error.log*

@@ -1,0 +1,40 @@
+version: "3.8"
+services:
+  postgres:
+    container_name: pg
+    image: postgres
+    restart: always
+    networks:
+      - pc-local
+    environment:
+      - POSTGRES_PASSWORD=abc@2022
+      - POSTGRES_DB=abc
+      - POSTGRES_USER=abc
+    ports:
+      - "5437:5432"
+
+  front-end:
+    build: momos
+    container_name: momos-frontend
+    restart: always
+    networks:
+      - pc-local
+    ports:
+      - "16800:16800"
+    depends_on:
+      - momos-backend
+
+  backend-end:
+    build: momos-backend
+    container_name: momos-backend
+    networks:
+      - pc-local
+    restart: always
+    ports:
+      - "16700:16700"
+    depends_on:
+      - postgres
+
+networks:
+  pc-local:
+    external: true

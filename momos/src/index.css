@@ -1,0 +1,31 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d9493910;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card {
+  margin-bottom: 30px;
+  border: none;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(154, 154, 204, 0.22);
+  -moz-box-shadow: 0px 1px 2px 1px rgba(154, 154, 204, 0.22);
+  box-shadow: 0px 1px 2px 1px rgba(154, 154, 204, 0.22);
+}
+
+.wrapper {
+  height: 90vh;
+}
+.text-secondary {
+  color: #d94939;
+}
+.btn-primary {
+  background-color: #d94939;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #941507;
+}
